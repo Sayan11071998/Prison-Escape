@@ -8,6 +8,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float climbSpeed = 5f;
     [SerializeField] private Vector2 deathKick = new Vector2(10f, 10f);
 
+    [SerializeField] private GameObject bullet;
+    [SerializeField] private Transform gun;
+
     private Vector2 moveInput;
     private Rigidbody2D myRigidbody;
     private CapsuleCollider2D myBodyCollider;
@@ -53,6 +56,13 @@ public class PlayerMovement : MonoBehaviour
         {
             myRigidbody.linearVelocity += new Vector2(0f, jumpSpeed);
         }
+    }
+
+    private void OnAttack(InputValue value)
+    {
+        if (!isAlive) return;
+
+        Instantiate(bullet, gun.position, transform.rotation);
     }
 
     private void Run()
