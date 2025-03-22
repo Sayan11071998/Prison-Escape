@@ -17,10 +17,7 @@ public class Bullet : MonoBehaviour
         xSpeed = player.transform.localScale.x * bulletSpeed;
     }
 
-    private void Update()
-    {
-        myRigidBody.linearVelocity = new Vector2(xSpeed, 0f);
-    }
+    private void Update() => myRigidBody.linearVelocity = new Vector2(xSpeed, 0f);
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -31,8 +28,5 @@ public class Bullet : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        Destroy(gameObject);
-    }
+    private void OnCollisionEnter2D(Collision2D other) => Destroy(gameObject);
 }
