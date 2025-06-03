@@ -150,6 +150,7 @@ This project encapsulates the full 2D game development cycle—from core movemen
 I’m open to collaboration and eager to discuss 2D platformer development, controller design, level design, or performance optimization strategies.
 
 ## Play Link
+https://sayannandi.itch.io/prison-escape
 
 [![Watch the video](https://img.youtube.com/vi/GKzVNuhoyxY/maxresdefault.jpg)](https://youtu.be/GKzVNuhoyxY)
 ### [Gameplay Video](https://youtu.be/GKzVNuhoyxY)
